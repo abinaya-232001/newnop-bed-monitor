@@ -1,0 +1,18 @@
+{
+  "video": "clip_wakeup_sitting_b",
+  "duration_sec": 15.1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 13.5,
+      "state": "LYING_IN_BED"
+    },
+    {
+      "start": 13.5,
+      "end": 15.1,
+      "state": "SITTING_ON_BED"
+    }
+  ],
+  "bed_events": [],
+  "notes": "lying to about 13 s then pushes up to sit; boundary uncertain by about 1 s; 1s sheet precision"
+}

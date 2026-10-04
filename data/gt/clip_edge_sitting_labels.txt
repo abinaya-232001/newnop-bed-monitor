@@ -1,4 +1,4 @@
-# clip_edge_sitting.mp4 - stock clip, person sits on bed edge the whole time, no exit/return
+# clip_edge_sitting.mp4 - edited third-party clip (origin in data/sources.md), person sits on the bed throughout, no exit/return
 duration 5.2
 0 5.2 SITTING_ON_BED
-note stock clip, sitting on bed edge throughout; short clip, failure-case material only
+note edited third-party clip with camera-angle changes, subject wrapped in a blanket; sits on bed throughout; failure-case material only

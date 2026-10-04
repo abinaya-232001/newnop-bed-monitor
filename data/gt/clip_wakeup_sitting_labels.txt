@@ -1,0 +1,4 @@
+duration 20.97
+0 17.5 LYING_IN_BED
+17.5 20.97 SITTING_ON_BED
+note legs off bed at 15 s, sitting by 18 s; boundary uncertain between 16.5 and 18 s; 1.5s sheet precision

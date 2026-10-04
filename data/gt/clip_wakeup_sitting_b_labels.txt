@@ -1,0 +1,4 @@
+duration 15.10
+0 13.5 LYING_IN_BED
+13.5 15.10 SITTING_ON_BED
+note lying to about 13 s then pushes up to sit; boundary uncertain by about 1 s; 1s sheet precision

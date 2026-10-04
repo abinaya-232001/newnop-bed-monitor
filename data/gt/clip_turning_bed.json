@@ -1,0 +1,13 @@
+{
+  "video": "clip_turning_bed",
+  "duration_sec": 12.7,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 12.7,
+      "state": "LYING_IN_BED"
+    }
+  ],
+  "bed_events": [],
+  "notes": "patient lies on bed throughout; physiotherapist beside the bed is not the monitored person; 1s sheet precision"
+}
