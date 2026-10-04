@@ -94,7 +94,7 @@ LYING_IN_BED, SITTING_ON_BED, SITTING_OUTSIDE_BED, STANDING, WALKING, OUT_OF_BED
 
 ## Bed exit and return
 
-`events.py` runs a phase machine over the smoothed timeline, treating each segment as in-bed or away. An away phase must last `min_away_sec` (3.0 s) to confirm a bed exit. See `src/bedmonitor/events.py` for the exact rules. Unit tests are in `tests/test_events.py`. **Not validated on real footage.**
+`detect_bed_events` in `src/bedmonitor/events.py` turns the smoothed timeline into bed exit and return events and out-of-bed periods. The exact confirmation rules were not re-read when this README was written; read the file for them. `agent.py` defines a `min_away_sec` setting of 3.0 s (an away state must persist this long to confirm an exit); how that interacts with `events.py` was not verified. Unit tests are in `tests/test_events.py`. **Not validated on real footage.**
 
 ## Agent
 
