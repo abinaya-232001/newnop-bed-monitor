@@ -1,0 +1,235 @@
+{
+  "observation_duration_sec": 143.8,
+  "activity_duration_sec": {
+    "lying_in_bed": 21.8,
+    "sitting_on_bed": 15.0,
+    "sitting_outside_bed": 0.0,
+    "standing": 20.5,
+    "walking": 0.0,
+    "out_of_bed": 0.0,
+    "unknown": 86.5
+  },
+  "bed_exit_count": 0,
+  "bed_return_count": 1,
+  "total_in_bed_sec": 36.8,
+  "total_out_of_bed_sec": 20.5,
+  "unknown_sec": 86.5,
+  "longest_out_of_bed_period_sec": 58.9,
+  "final_state": "unknown",
+  "bed_events": [
+    {
+      "event": "return_to_bed",
+      "start_time": "00:00:59",
+      "confirmed_time": "00:00:59",
+      "start_sec": 58.9,
+      "confirmed_sec": 58.9,
+      "previous_state": "standing",
+      "current_state": "lying_in_bed",
+      "confidence": 0.7,
+      "via_sitting": false,
+      "decision": "NORMAL"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "type": "possible_return",
+      "at": "00:00:53",
+      "reason": "sat_on_bed_but_did_not_lie_down"
+    },
+    {
+      "type": "possible_bed_exit",
+      "at": "00:02:03",
+      "reason": "video_ended_before_confirmation"
+    }
+  ],
+  "timeline": [
+    {
+      "start": 0.0,
+      "end": 21.8,
+      "state": "UNKNOWN"
+    },
+    {
+      "start": 21.8,
+      "end": 30.7,
+      "state": "STANDING"
+    },
+    {
+      "start": 30.7,
+      "end": 52.8,
+      "state": "UNKNOWN"
+    },
+    {
+      "start": 52.8,
+      "end": 56.6,
+      "state": "SITTING_ON_BED"
+    },
+    {
+      "start": 56.6,
+      "end": 58.9,
+      "state": "STANDING"
+    },
+    {
+      "start": 58.9,
+      "end": 80.6,
+      "state": "LYING_IN_BED"
+    },
+    {
+      "start": 80.6,
+      "end": 85.1,
+      "state": "SITTING_ON_BED"
+    },
+    {
+      "start": 85.1,
+      "end": 101.8,
+      "state": "UNKNOWN"
+    },
+    {
+      "start": 101.8,
+      "end": 108.5,
+      "state": "SITTING_ON_BED"
+    },
+    {
+      "start": 108.5,
+      "end": 122.6,
+      "state": "UNKNOWN"
+    },
+    {
+      "start": 122.6,
+      "end": 124.2,
+      "state": "STANDING"
+    },
+    {
+      "start": 124.2,
+      "end": 127.4,
+      "state": "UNKNOWN"
+    },
+    {
+      "start": 127.4,
+      "end": 135.0,
+      "state": "STANDING"
+    },
+    {
+      "start": 135.0,
+      "end": 143.8,
+      "state": "UNKNOWN"
+    }
+  ],
+  "alerts": [],
+  "overall_decision": "NORMAL",
+  "agent_traces": [
+    {
+      "observation": "possible_return at 00:00:53",
+      "evidence": [
+        "sat_on_bed_but_did_not_lie_down"
+      ],
+      "uncertainty": "candidate only",
+      "requested_context": [
+        "segment_after"
+      ],
+      "decision": "REJECTED",
+      "reason": "sat_on_bed_but_did_not_lie_down"
+    },
+    {
+      "observation": "possible_bed_exit at 00:02:03",
+      "evidence": [
+        "video_ended_before_confirmation"
+      ],
+      "uncertainty": "candidate only",
+      "requested_context": [
+        "segment_after"
+      ],
+      "decision": "REJECTED",
+      "reason": "video_ended_before_confirmation"
+    },
+    {
+      "observation": "UNKNOWN from 00:00:00 to 00:00:22",
+      "evidence": [
+        "before: None",
+        "after: STANDING",
+        "frame reasons: {'no_person_detected': 16, 'sitting_hips_inside_bed_roi': 9, 'posture_unclear': 15, 'lying_posture_inside_bed_roi': 5, 'lying_but_not_on_bed': 23, 'multi_person_frames': 1}"
+      ],
+      "uncertainty": "cannot tell from context",
+      "requested_context": [
+        "segment_before",
+        "segment_after",
+        "frame_reasons",
+        "vlm(optional)"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "timeline keeps UNKNOWN; no valid VLM opinion available",
+      "vlm_advisory": null
+    },
+    {
+      "observation": "UNKNOWN from 00:00:31 to 00:00:53",
+      "evidence": [
+        "before: STANDING",
+        "after: SITTING_ON_BED",
+        "frame reasons: {'posture_unclear': 46, 'sitting_hips_inside_bed_roi': 9, 'no_person_detected': 10, 'lying_but_not_on_bed': 3, 'lying_posture_inside_bed_roi': 1}"
+      ],
+      "uncertainty": "cannot tell from context",
+      "requested_context": [
+        "segment_before",
+        "segment_after",
+        "frame_reasons",
+        "vlm(optional)"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "timeline keeps UNKNOWN; no valid VLM opinion available",
+      "vlm_advisory": null
+    },
+    {
+      "observation": "UNKNOWN from 00:01:25 to 00:01:42",
+      "evidence": [
+        "before: SITTING_ON_BED",
+        "after: SITTING_ON_BED",
+        "frame reasons: {'posture_unclear': 42, 'sitting_hips_inside_bed_roi': 3, 'lying_posture_inside_bed_roi': 7, 'multi_person_frames': 10}"
+      ],
+      "uncertainty": "possible occlusion or detection loss while in bed",
+      "requested_context": [
+        "segment_before",
+        "segment_after",
+        "frame_reasons",
+        "vlm(optional)"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "timeline keeps UNKNOWN; no valid VLM opinion available",
+      "vlm_advisory": null
+    },
+    {
+      "observation": "UNKNOWN from 00:01:48 to 00:02:03",
+      "evidence": [
+        "before: SITTING_ON_BED",
+        "after: STANDING",
+        "frame reasons: {'posture_unclear': 40, 'no_person_detected': 4}"
+      ],
+      "uncertainty": "cannot tell from context",
+      "requested_context": [
+        "segment_before",
+        "segment_after",
+        "frame_reasons",
+        "vlm(optional)"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "timeline keeps UNKNOWN; no valid VLM opinion available",
+      "vlm_advisory": null
+    },
+    {
+      "observation": "UNKNOWN from 00:02:15 to 00:02:24",
+      "evidence": [
+        "before: STANDING",
+        "after: None",
+        "frame reasons: {'no_person_detected': 28}"
+      ],
+      "uncertainty": "cannot tell from context",
+      "requested_context": [
+        "segment_before",
+        "segment_after",
+        "frame_reasons",
+        "vlm(optional)"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "timeline keeps UNKNOWN; no valid VLM opinion available",
+      "vlm_advisory": null
+    }
+  ]
+}

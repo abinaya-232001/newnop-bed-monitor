@@ -1,0 +1,13 @@
+{
+  "video": "clip_edge_sitting",
+  "duration_sec": 5.2,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.2,
+      "state": "SITTING_ON_BED"
+    }
+  ],
+  "bed_events": [],
+  "notes": "stock clip, sitting on bed edge throughout; short clip, failure-case material only"
+}

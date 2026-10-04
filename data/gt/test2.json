@@ -1,0 +1,13 @@
+{
+  "video": "test2",
+  "duration_sec": 13.6,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 13.6,
+      "state": "LYING_IN_BED"
+    }
+  ],
+  "bed_events": [],
+  "notes": "pipeline smoke test only, lying-only footage"
+}

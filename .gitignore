@@ -1,0 +1,26 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# model weights (ultralytics downloads yolov8n-pose.pt on first run)
+*.pt
+
+# third-party stock footage is not redistributed; sources are listed in data/sources.md
+data/input/
+
+# working files (contact sheets are frames from the clips)
+scratch/
+
+# backups
+*.bak
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+all_code_dump.txt

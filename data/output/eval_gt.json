@@ -1,0 +1,566 @@
+[
+  {
+    "video": "clip_edge_sitting",
+    "evaluated_sec": 5.2,
+    "tolerance_sec": 5.0,
+    "state": {
+      "accuracy": 0.0,
+      "unknown_predicted_fraction": 0.0,
+      "accuracy_excluding_unknown": 0.0,
+      "per_state": {
+        "LYING_IN_BED": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "SITTING_ON_BED": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "support_sec": 5.0,
+          "predicted_sec": 0.0
+        },
+        "SITTING_OUTSIDE_BED": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "STANDING": {
+          "precision": 0.0,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 5.0
+        },
+        "WALKING": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "OUT_OF_BED": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "UNKNOWN": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "LYING_IN_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "SITTING_ON_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 10,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "SITTING_OUTSIDE_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "STANDING": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "WALKING": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "OUT_OF_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "UNKNOWN": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      }
+    },
+    "durations": {
+      "LYING_IN_BED": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "SITTING_ON_BED": {
+        "gt_sec": 5.2,
+        "pred_sec": 0.0,
+        "abs_err_sec": 5.2,
+        "pct_err": 100.0
+      },
+      "SITTING_OUTSIDE_BED": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "STANDING": {
+        "gt_sec": 0.0,
+        "pred_sec": 5.2,
+        "abs_err_sec": 5.2,
+        "pct_err": null
+      },
+      "WALKING": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "OUT_OF_BED": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "UNKNOWN": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      }
+    },
+    "events": {
+      "bed_exit": {
+        "tp": 0,
+        "false_detections": 0,
+        "missed": 0,
+        "precision": null,
+        "recall": null,
+        "mean_time_error_sec": null
+      },
+      "return_to_bed": {
+        "tp": 0,
+        "false_detections": 0,
+        "missed": 0,
+        "precision": null,
+        "recall": null,
+        "mean_time_error_sec": null
+      }
+    }
+  },
+  {
+    "video": "test2",
+    "evaluated_sec": 13.6,
+    "tolerance_sec": 5.0,
+    "state": {
+      "accuracy": 1.0,
+      "unknown_predicted_fraction": 0.0,
+      "accuracy_excluding_unknown": 1.0,
+      "per_state": {
+        "LYING_IN_BED": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support_sec": 13.5,
+          "predicted_sec": 13.5
+        },
+        "SITTING_ON_BED": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "SITTING_OUTSIDE_BED": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "STANDING": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "WALKING": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "OUT_OF_BED": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "UNKNOWN": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "LYING_IN_BED": {
+        "LYING_IN_BED": 27,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "SITTING_ON_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "SITTING_OUTSIDE_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "STANDING": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "WALKING": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "OUT_OF_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "UNKNOWN": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      }
+    },
+    "durations": {
+      "LYING_IN_BED": {
+        "gt_sec": 13.6,
+        "pred_sec": 13.6,
+        "abs_err_sec": 0.0,
+        "pct_err": 0.0
+      },
+      "SITTING_ON_BED": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "SITTING_OUTSIDE_BED": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "STANDING": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "WALKING": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "OUT_OF_BED": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "UNKNOWN": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      }
+    },
+    "events": {
+      "bed_exit": {
+        "tp": 0,
+        "false_detections": 0,
+        "missed": 0,
+        "precision": null,
+        "recall": null,
+        "mean_time_error_sec": null
+      },
+      "return_to_bed": {
+        "tp": 0,
+        "false_detections": 0,
+        "missed": 0,
+        "precision": null,
+        "recall": null,
+        "mean_time_error_sec": null
+      }
+    }
+  },
+  {
+    "video": "POOLED (2 videos)",
+    "evaluated_sec": 18.8,
+    "tolerance_sec": 5.0,
+    "state": {
+      "accuracy": 0.7297297297297297,
+      "unknown_predicted_fraction": 0.0,
+      "accuracy_excluding_unknown": 0.7297297297297297,
+      "per_state": {
+        "LYING_IN_BED": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support_sec": 13.5,
+          "predicted_sec": 13.5
+        },
+        "SITTING_ON_BED": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "support_sec": 5.0,
+          "predicted_sec": 0.0
+        },
+        "SITTING_OUTSIDE_BED": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "STANDING": {
+          "precision": 0.0,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 5.0
+        },
+        "WALKING": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "OUT_OF_BED": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        },
+        "UNKNOWN": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support_sec": 0.0,
+          "predicted_sec": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "LYING_IN_BED": {
+        "LYING_IN_BED": 27,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "SITTING_ON_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 10,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "SITTING_OUTSIDE_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "STANDING": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "WALKING": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "OUT_OF_BED": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      },
+      "UNKNOWN": {
+        "LYING_IN_BED": 0,
+        "SITTING_ON_BED": 0,
+        "SITTING_OUTSIDE_BED": 0,
+        "STANDING": 0,
+        "WALKING": 0,
+        "OUT_OF_BED": 0,
+        "UNKNOWN": 0
+      }
+    },
+    "durations": {
+      "LYING_IN_BED": {
+        "gt_sec": 13.6,
+        "pred_sec": 13.6,
+        "abs_err_sec": 0.0,
+        "pct_err": 0.0
+      },
+      "SITTING_ON_BED": {
+        "gt_sec": 5.2,
+        "pred_sec": 0.0,
+        "abs_err_sec": 5.2,
+        "pct_err": 100.0
+      },
+      "SITTING_OUTSIDE_BED": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "STANDING": {
+        "gt_sec": 0.0,
+        "pred_sec": 5.2,
+        "abs_err_sec": 5.2,
+        "pct_err": null
+      },
+      "WALKING": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "OUT_OF_BED": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      },
+      "UNKNOWN": {
+        "gt_sec": 0.0,
+        "pred_sec": 0.0,
+        "abs_err_sec": 0.0,
+        "pct_err": null
+      }
+    },
+    "events": {
+      "bed_exit": {
+        "tp": 0,
+        "false_detections": 0,
+        "missed": 0,
+        "precision": null,
+        "recall": null,
+        "mean_time_error_sec": null
+      },
+      "return_to_bed": {
+        "tp": 0,
+        "false_detections": 0,
+        "missed": 0,
+        "precision": null,
+        "recall": null,
+        "mean_time_error_sec": null
+      }
+    }
+  }
+]

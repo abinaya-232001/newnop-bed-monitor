@@ -1,0 +1,55 @@
+{
+  "observation_duration_sec": 10.1,
+  "activity_duration_sec": {
+    "lying_in_bed": 0.0,
+    "sitting_on_bed": 4.0,
+    "sitting_outside_bed": 0.0,
+    "standing": 0.0,
+    "walking": 0.0,
+    "out_of_bed": 0.0,
+    "unknown": 6.1
+  },
+  "bed_exit_count": 0,
+  "bed_return_count": 0,
+  "total_in_bed_sec": 4.0,
+  "total_out_of_bed_sec": 0.0,
+  "unknown_sec": 6.1,
+  "longest_out_of_bed_period_sec": 0.0,
+  "final_state": "unknown",
+  "bed_events": [],
+  "rejected_candidates": [],
+  "timeline": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "state": "SITTING_ON_BED"
+    },
+    {
+      "start": 4.0,
+      "end": 10.1,
+      "state": "UNKNOWN"
+    }
+  ],
+  "alerts": [],
+  "overall_decision": "NORMAL",
+  "agent_traces": [
+    {
+      "observation": "UNKNOWN from 00:00:04 to 00:00:10",
+      "evidence": [
+        "before: SITTING_ON_BED",
+        "after: None",
+        "frame reasons: {'posture_unclear': 18}"
+      ],
+      "uncertainty": "cannot tell from context",
+      "requested_context": [
+        "segment_before",
+        "segment_after",
+        "frame_reasons",
+        "vlm(optional)"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "timeline keeps UNKNOWN; no valid VLM opinion available",
+      "vlm_advisory": null
+    }
+  ]
+}

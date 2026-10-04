@@ -1,0 +1,4 @@
+# clip_edge_sitting.mp4 - stock clip, person sits on bed edge the whole time, no exit/return
+duration 5.2
+0 5.2 SITTING_ON_BED
+note stock clip, sitting on bed edge throughout; short clip, failure-case material only

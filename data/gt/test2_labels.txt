@@ -1,0 +1,4 @@
+# test2.mp4 - stock clip, person lying under blanket, no exit/return
+duration 13.6
+0 13.6 LYING_IN_BED
+note pipeline smoke test only, lying-only footage

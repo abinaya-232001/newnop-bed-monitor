@@ -1,0 +1,31 @@
+{
+  "observation_duration_sec": 13.6,
+  "activity_duration_sec": {
+    "lying_in_bed": 13.6,
+    "sitting_on_bed": 0.0,
+    "sitting_outside_bed": 0.0,
+    "standing": 0.0,
+    "walking": 0.0,
+    "out_of_bed": 0.0,
+    "unknown": 0.0
+  },
+  "bed_exit_count": 0,
+  "bed_return_count": 0,
+  "total_in_bed_sec": 13.6,
+  "total_out_of_bed_sec": 0.0,
+  "unknown_sec": 0.0,
+  "longest_out_of_bed_period_sec": 0.0,
+  "final_state": "lying_in_bed",
+  "bed_events": [],
+  "rejected_candidates": [],
+  "timeline": [
+    {
+      "start": 0.0,
+      "end": 13.6,
+      "state": "LYING_IN_BED"
+    }
+  ],
+  "alerts": [],
+  "overall_decision": "NORMAL",
+  "agent_traces": []
+}
